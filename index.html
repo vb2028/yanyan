@@ -1,0 +1,936 @@
+<!DOCTYPE html> 
+<!--这是文档说明，指的是当前网页的版本html5-->
+<html lang="en">
+      <head>
+          <meta charset="utf-8">
+           <title>vb2028封面</title>
+          <!--引入重置样式表-->
+          <link rel="stylesheet" href="./2021/css/reset.css">
+          <!--<link rel="stylesheet" href="./css/reset.css">-->
+          <!--引入图标字体-->
+          <link rel="stylesheet" href="./2021/css/all.css">
+         
+           <style type="text/css">
+                  .w{
+                  width:963PX; 
+                  margin: 0 AUTO;
+                 }
+                 /*设置网页背景颜色*/
+                body {
+                      background:#FFF7EC;
+                      margin: 0 AUTO;
+
+                } 
+                /*去掉下划线*/
+                a{
+                  text-decoration:none;
+                }  
+               
+  
+
+                 /*设置网页头部盒子*/
+                .outer {
+                        width:963px;
+                        height:100px;
+                        border:2px solid #c7f7bd;
+                       /* padding-right:auto;*/
+                        margin: 0 AUTO;
+                        background:#FFF7EC；
+
+                        
+                   }
+                   
+                 /*设置网页江山如此多娇字体及位置*/  
+               .s1 {
+                     color:red;
+                     font-size:40px;
+                     font-family:"隶书" ;
+                     font-weight: bold;
+                     font-weight:700;
+                     font-style: italic;
+                      margin-left:300px; 
+               }
+
+               /*.inter {
+                        width:963px;
+                        height:50px;
+                        border:2px solid #c7f7bd;
+                        padding-right:auto;
+                        background:#FFF7EC；
+
+                        
+              } */
+               /*按老师讲的头部导航条外部容器 */
+              .top-bar-wrapper{
+                    width: 963px;
+                    height:50px;
+                    background-color: #FFF7EC;
+                    /*行高*/
+                    line-height:30px;
+                    border:2px solid greenyellow;
+                    margin-top:0px;
+                    padding-right:auto;
+                    margin: 0 auto;
+              }
+                /*按老师讲的头部导航条解决浮动塌陷 */
+              .clearfix::before,
+              .clearfix::after{
+                   content:'';
+                   display:table;
+                   clear: both;
+              }
+              /*按老师讲的头部导航条内部容器 */
+              .top-bar{
+                    width:900px;
+                    height:40px;
+                    border: 1px green solid;
+                    margin: 0 auto;
+                    padding-right:auto;
+                   
+              
+
+                    
+              }
+              body{
+                    font-size: 10px;
+
+              }
+              .top-bar a,
+              .top-bar span,
+              .top-bar i{
+                        color:green,
+            text-decoration：none ;        
+            }
+              
+              /*鼠标点变色*/
+              .top-bar a:hover,
+              .top-bar a.highlight{
+                    color:#f10215;
+              }
+               /*按老师讲的头部导航条内部容器左侧菜单 */
+              .location{
+                    float: left;  /*往左浮动*/
+                    margin-left:60px;
+                    margin-top:8px;
+                   
+              }
+              .location .fas{
+                    color: #f10215;
+                    font-size: 14px;
+              }
+              .location .city-list{
+                    /*隐藏设置*/
+                    display: none;
+                    width: 320px;
+                    height:436px;
+                    background-color: white;
+                    background-image:url('./tc01.jpg') ;
+                    border: 1px solid rgb(204,204,204) ;
+                   /*脱离文档流设置绝对定位使其不占据页面*/
+                    position: absolute;
+                     /*设置阴影模糊半径及透明*/
+                    box-shadow: 0 2px 2px rgba(0, 0, 0,.2);
+                     z-index: 999;
+              }
+              .location:hover .city-list{
+                    display:block ;
+                   
+                     
+
+              }
+              /*为了鼠标移到下拉框时候当前城市的小方块还显示*/
+              .location:hover .current-city{
+                    background-color: white;
+                    border: 1px solid rgb(204,204,204);
+                    border-bottom:none;
+                    padding-bottom:1px; 
+
+              }
+              
+                  
+                   /* border: 1px solid rgb(204,204,204);
+                    border-bottom: none;*/
+                   /* width:30px;
+                    height: 15px;*/
+              /*设置列表上边小突出底部是0*/
+             /* .location:hover .current-city{
+                     background-color: white;
+                     border: 1px solid rgb(204,204,204);
+                     border-bottom: none;
+                     padding-bottom: 1px; */
+              /*设置列表上边小突出底部是0 */
+              .current-city:hover{
+                    background-color: white;
+                    border: 1px solid rgb(204,204,204);
+                    border-bottom:none;
+                    padding-bottom:1px; 
+                    
+              }
+              /*设置列表上边小突出*/
+              .current-city{
+                    padding:0 10px;
+                    /*设置列表上边小突出相对定位*/
+                    position:relative;
+                    /*设置层级*/
+                    z-index:999;
+                    /*为了字不抖，再让边框变透明*/
+                    border: 1px solid transparent;
+                    border-bottom:none;
+                    
+              }
+               /*按老师讲的头部导航条内部容器右侧菜单 */
+              .shortcut{
+                    float:right ;/*往右浮动*/
+                    /*margin-top:-30px;*/
+                    /*margin-left:100px;*/
+                   
+              } 
+              .shortcut li{
+                         float:left;
+                        
+                        
+                                     
+              } 
+             
+               /*设置分割线上下左右下边距*/
+              .shortcut .line{
+                    width: 1px;
+                    height:10px;
+                    background-color: rgb（204，202，202）;
+                    margin: 12px 12px 0;
+                    margin-top:-1px ;
+              }
+              .box1{
+                    width: 963px;
+                    height: 40px; 
+                    background-color: white;
+                    border: 0 0 0 2px green solid;
+                    margin:0 auto; 
+                   /* background-image: url('./b014.jpg') ;*/
+                     /*设置图片向X方向重复*/  
+                    /*background-repeat: repeat-x; */ 
+                    /*设置图片颜色线性渐变*/ 
+                    background-image:linear-gradient( rgb(241, 127, 127 ) ,rgb(247, 247, 169)   )
+              }
+              /* .box2{
+                    width: 963px;
+                    height: 40px; 
+                    background-image:linear-gradient(to top red ,yellow); 
+               }*/
+
+                 /*设置网页江山如此多娇字体及位置*/  
+               .s2{
+                     color:rgb(1, 20, 13);
+                     font-size:1px;
+                      margin-left:100px; 
+               }
+               /*设置网页江山如此多娇圆梦容器位置*/  
+               .news-wrapper {     
+                             width:190px;
+                              
+                             border:2px solid #cef1c7;
+                             margin-top:-455px; 
+                             margin-left:773px;
+                             height:450px;
+                             } 
+               .news-title  {
+                     display:inline-block;
+                     height:30px;
+                     border-top:1px red solid;
+                     padding-top:10px;
+                     margin-top:-1px;
+               }
+               .news-title a{
+                     text decoration:none;
+                     color:#40406b;
+                     font-weight:bold;
+                  
+               }
+               .news-list{
+                     margin-top:20px;
+                     padding-left:14px;
+                     list-style:square;
+                     margin-bottom: 17px;
+
+               }
+               .news-list li a{
+                     font-size:14px;
+                     color:rgb(10, 10, 10);
+               }
+               .news-list li a:hover{
+                     color:rgb(221, 18, 18);
+               }
+               .news-list li::before{
+                     content:"" ;
+                     color:rgb(4, 59, 18) ;
+                     font-size:12px ;
+                     margin-right:left ;
+               }
+                .news-img  {
+                      margin-top:30px;
+                      color:rgb(26, 202, 55);
+                      font-weight:bold;
+                      padding-left:10px;}
+                      
+                 .img-title {
+                  margin-top:20px;
+                      color:#fff;
+                      font-weight:bold;
+                      padding-left:15px;  
+                       height:80px；
+                }
+             /*.news-img{height:150px;
+
+                      
+                 }*/
+                             
+               /*设置江山中间外容器盒子*/
+               .middle-nav {     
+                             width:563px;
+                              
+                             border:2px solid #cef1c7;
+                             margin-top:-455px; 
+                             margin-left:200px;
+                             height:450px;
+               
+
+                             }
+                   <!--在右侧增加一个框-->
+             .middle4-nav {     
+            width:150px;
+                              
+            border:2px solid #cef1c7; 
+             margin-top:-455px; 
+            margin-left:763px;
+            height:450px;
+               
+
+                             }  
+
+                       /*设置江山中部外容器内的轮播图盒子*/       
+            .lunbotu{
+                   width:540px;
+                   border:2px solid #cef1c7;
+                   padding-top:-255px; 
+                   margin-left:0px;
+                   height:450px;
+
+             }  
+             
+  /*设置江山中部外容器内的轮播图2盒子*/    
+           .lunbotu2{ 
+                     width:363px;
+                     height:195px;
+                     border:2px solid #cef1c7;
+                     padding-top:-50px; 
+                     padding-left:100px;
+                  }
+           .img-list{
+                 width:363px;
+                 height:195px;
+                 margin-top: -5px;
+                 margin-left: 0px;
+                 
+                 position: relative;            
+            }
+            .img-list li{position:absolute ;
+
+            }
+            .img-list li:nth-child(1){z-index:1;
+
+            }
+            .pointer a.active,
+            .pointer a:hover {
+                  background-color: #fff;
+                  border: 2px solid yellow;}
+            .pointer a{display: block;
+                  float: left;
+                  width: 6px;
+                  height:6px ;
+                  background-color: red;
+                  border:2px solid transparent;
+                  border-radius:50% ;
+                  margin-left: 4px;
+                  background-clip: content-box;
+            }
+            .pointer{
+                  position: relative;
+                  z-index: 9999;
+                  bottom: 70px;
+                  left:200px ;
+            }
+             
+             /*设置江山左侧钢琴导航条盒子*/
+                  .left-nav {     
+                             width:190px;
+                             height:450px;
+                             border:2px solid #cef1c7;
+                             margin-bottom:-25px;
+                             z-index: 999;
+                             }
+
+                            
+   
+                  
+                   .left-navitem{
+                         height:25px;
+                         padding-left:18px;
+                        line-height:25px;
+                   }          
+                      /*设置链接的颜色字体*/  
+                  .div-item{ 
+                        margin-left:18px;
+                        color:red;
+                      font-size:15px;} 
+
+                   .item a{margin-left:18px；
+
+                   }
+                     
+                  p {
+                    color:green;
+                    font-size:25px;
+                    }
+                    .outer2 {
+                        width:963px;
+                        height:100px;
+                        border:2px solid #c7f7bd;
+                        margin-left:-775px;
+                        margin-top:700px;
+                        background:#FFF7EC；
+
+
+                        
+                   } 
+                  .outer2 a:link{
+                        display: block;
+                        width: 93px;
+                        height:29px;
+                        background-image:url('./2021/b018.jpg') ;
+                        background-position: 0 0;
+                   }
+
+                   .outer2 a:hover{
+                        background-image:url('./2021/b018.jpg');
+                        background-position: -66px 0;
+                  }
+                 
+                  .outer2 a:active{
+                        background-image:url('./2021/b018.jpg');
+                        background-position: 45px 0;
+                  }
+                 /* .outer2 .box1{
+                        width: 93px;
+                        height: 29px;
+                        background-image:url('./b018.jpg');
+                        background-position: 0 0;
+                  }
+                  .outer2 .box2-hover{
+                        background-position: 32 0;
+
+                  }
+                  .outer2 .box3-active{
+                        background-position: 62 0;
+                  }
+                  .outer2 .box2{
+                        background-position: 0 0;
+                 /* .outer2 .box2{
+                        width: 93px;
+                        height: 29px;
+                        background-image:url('./b018.jpg');
+                        background-position: 31 0;
+                  }
+                  .outer2 .box3{
+                        width: 93px;
+                        height: 29px;
+                        background-image:url('./b018.jpg');
+                        background-position: 31 0 ;
+                  }*/
+
+                   /*设置江山底部盒子*/ 
+
+
+                   .outer3 {
+                        width:963px;
+                        height:200px;
+                        border:2px solid #c7f7bd;
+                        margin-left:-775px;
+                        margin-top:2px;
+                        background:#FFF7EC；  } 
+                  .outer3 a:link{
+                        display: block;
+                        width: 93px;
+                        height:29px;
+                        background-image:url('./2021/b015.jpg') ;
+
+                  }
+                  .outer3 a:hover{
+                        background-image:url('./2021/b016.jpg');
+                  }
+                  .outer3 a:active{
+                        background-image:url('./2021/2021/b017.jpg');
+                  }
+                 .box123{
+                  width: 963px;
+                    height:1080px;
+                    background-color: #FFF7EC;
+                    /*行高*/
+                   /* line-height:30px;*/
+                    border:2px solid #c7f7bd;
+                    margin-top:25px;
+                    padding-right:auto;
+                    margin: 0 auto;
+
+                 }
+
+            /*.STYLE1 {color: #FF0000}
+             .STYLE3 {color: #FFFFFF}
+             .STYLE7 {font-size: 8px}
+             .STYLE8 {font-size: 8px; 
+                     color: #FF0000; 
+                  }*/
+              /*尺寸大的*/ 
+             .STYLE10 {font-size: large; 
+                       color: #330000; 
+                      /*字体加重加粗*/ 
+                       font-weight: bold;
+                  }
+             
+                  
+                  
+            </style>
+            <!--内部样式表，对在本文内的P标签都起作用-->
+      </head>
+      <body>
+          <div class="outer">
+              <ul>
+                 
+                 <img src="./cn-003.jpg" alt="logo" width=50 ></a>  
+                 <a href="index.html" target="_blank">首页</a>
+                  
+   
+                  <span class="s1">应用技术学习</span>
+                 
+                 
+              </ul>
+            </div>
+      <div class="box1">
+           <!--<div class="box2">-->
+
+      </div> 
+      <div class="top-bar-wrapper"><!--创建外围容器-->
+          <div class="top-bar clearfix"><!--创建内部容器+clearfix防塌陷-->
+                <div class="location"><!--内部容器左侧-->
+                     <div class="current-city"><!--内部左侧菜单内容-->
+                        <!--<i class="fas fa-cog fa-spin" style="font-size:10px; color:green"></i><i class="fas fa-map-marker-alt"></i>--><!--左侧小图标-->
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="./eng01.mp3">弹窗</a>
+                        
+                        <!--<a href="JavaScript:;">弹窗</a>-->
+
+                     </div>
+                     <div class="city-list"></div> 
+               </div> 
+                  
+                      <!--+clearfix防塌陷-->
+               <ul class="shortcut clearfix" >
+                  <li >
+                      <a href="JavaScript:;">登录</a>
+                      <a class="highlight" href="JavaScript:;" >注册</a>
+                  
+                  </li>
+
+                  <li class="line">|</li>
+                  <li ><a href="./20240131.html">网站定位</a></li>
+
+                  <li class="line">|</li>
+                  <li ><a href="http://www.vb2028.com/indexecs20240310.html">智能仿生园</a> 
+                 
+                        <!--<i class="fas fa-angle-down"></i>--> 
+                  </li>
+
+                  <li class="line">|</li>
+                  <li ><a href="./2021-013com.html">机器人护理员</a>
+                     <!-- <i class="fas fa-angle-down"></i>--> 
+                  </li>
+
+                  <li class="line">|</li>
+                  <li ><a href="./2021-013cn.html">网络助老测试</a>
+                        <!--<i class="fas fa-angle-down"></i>class="highlight"--> 
+                  </li>
+
+                  <li class="line">|</li>
+                  <li ><a href="https://3w1io2.smartapps.baidu.com/?_swebfr=1&_swebScene=3611000000000000P">数理奇缘</a>
+                        <!--<i class="fas fa-angle-down"></i>-->
+                  </li>
+
+                  <li class="line">|</li> 
+                  <li ><a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=98012088_5_oem_dg&wd=%E6%96%87%E5%BF%83%E4%B8%80%E8%A8%80%E5%AE%98%E7%BD%91&oq=%25E6%2596%2587%25E5%25BF%2583%25E4%25B8%2580%25E8%25A8%2580%25E5%25AE%2598%25E7%25BD%2591&rsv_pq=a2d057bd00083543&rsv_t=017bR9nc9chL13QDru6b3YlrxNp1uZccKZYCc7SI6bkOiObnfDuWUCYPFZXkg7el6e7C9u7oDd0&rqlang=cn&rsv_enter=1&rsv_dl=tb&rsv_btype=t&inputT=16&rsv_sug3=19&rsv_sug1=28&rsv_sug7=100&rsv_sug2=0&rsv_sug4=6055&rsv_sug=1">智能伙伴</a>
+                        <!--<i class="fas fa-angle-down"></i>--> 
+                  </li> 
+
+            <li class="line">|</li>
+                 <!--<li ><span></span> 
+                       <i class="fa-people-arrows">预留栏目|</i>-->
+                 <li ><a class="highlight" href="./2024ashma/index.html">江山如此多娇</a>
+            </li>
+
+                <!-- <li class="line">|</li>
+                 <li ><span>壮美山河</span>-->
+                     <!--<i class="fas fa-angle-down"></i> 
+                 </li>-->
+
+                <!-- <li class="line">|</li>
+                 <li> <span>琴棋诗画</span>
+                </li>-->
+             </ul>
+          </div>  
+
+      </div >      
+       <!--    <div class="inter">
+                  <ul>
+                  
+                    
+                       
+                     <a href="./2021-002003.html" target="_blank">下拉栏目</a>
+                            <img src="./002.jpg" alt="草地" width=5 height=5></a>
+
+                     <a href="./2021-xiala001.html"  >国家信息</a>
+                            <img src="./002.jpg" alt="草地" width=5 height=5 ></a>
+
+                     <a href="./2021-xiala002.html" >北京信息</a>
+                            <img src="./002.jpg" alt="草地" width=5 height=5></a>
+                            
+                     <a href="./2021-xiala003.html" >风景视频</a>
+                            <img src="./002.jpg" alt="草地" width=5 height=5></a> 
+
+                     <a href="./2021-xiala004.html" >群策群力</a>
+                            <img src="./002.jpg" alt="草地" width=5 height=5></a> 
+
+                    <a href="./2021-xiala005.html">网络居家</a>
+                            <img src="./002.jpg" alt="草地" width=5 height=5></a> 
+
+                    <a href="./2021-xiala006.html" >壮美山河</a>
+                            <img src="./002.jpg" alt="草地" width=5 height=5></a> 
+
+                    <a href="./2021-xiala007.html" target="_blank">琴棋诗画</a>
+                            <img src="./002.jpg" alt="草地" width=5 height=5></a>
+                            
+                    <a href="./2021-xiala008.html" target="_blank">历史文物 </a>
+                            <img src="./002.jpg" alt="草地" width=5 height=5></a>
+                             
+                   <i class="fas fa-bell " style="font-size:20px; color:red"></i>
+                   <i class="fab fa-accessible-icon" style="font-size:20px; color:red"></i>
+                   <i class="fas fa-cog fa-spin" style="font-size:20px; color:green"></i>
+                   <i class="fas fa-search" style="font-size:20px; margin-left:100px;color:green"></i>-->
+
+                  <!--fa-bell fa-spin添加旋转-->
+                   <!--<span class="s2"></span>-->
+<!--<div class="box1"></div>-->
+                    
+                   
+                     
+        <div  class="box123"> 
+           
+            <nav class="left-nav">
+                 <br/> <br/><br/> <br/>
+                  <div class="item">
+                        <p align="center"><iframe frameborder="0" src="http://www.vb2028.com/index20240404.html" width="180" height="400"></iframe></p>   
+                       <!-- <p align="center"><iframe frameborder="0" src="http://www.vb2028.com/index11084.html" width="150" height="100"></iframe></p>--> 
+                       <!-- <p align="center"><iframe frameborder="0" src="http://www.vb2028.com/index11085.html" width="150" height="100"></iframe></p> -->  
+                       <!-- <p align="center"><iframe frameborder="0" src="http://www.vb2028.com/index11086.html" width="150" height="100"></iframe></p> --> 
+                 
+                                 
+           </nav>
+             <br/><br/>
+            <nav class="middle-nav">
+                 
+                  <div class="item">
+                       <div class="lunbotu">
+                        <iframe frameborder="0" src="http://www.vb2028.com/index0812ddsd.html" width="540" height="400"></iframe> 
+                  </div>
+            </nav>           
+                        
+                       
+                        <!--target="_blank"-->
+                        <!--<a href="https://tv.sohu.com/v/dXMvNDgzMTEvNTk4NTg1NS5zaHRtbA==.html">雨中飘荡的回忆</a> 
+                        <br></br>
+                        <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=5985855&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>  
+                        <br></br> -->
+                        
+                       <!-- <audio controls loop="true"  autoplay="true"
+                        <source src="./zhaifei3.mp3">
+                      <embed src=“./zhaifei3.mp3”  type="audio/mp3"  width="0" height="0"   >
+                      </audio> -->     
+                      
+                  
+                                   
+             
+
+             <div class="news-wrapper">
+                   <h2 class="news-title">
+                        <!-- <a href="http://www.ashma.net/">圆梦</a>-->
+                   </h2> 
+             
+            <div class="news-img">
+                <!-- <a href="https://tv.sohu.com/user/48311#t0">
+                       <img src="./2021/002.jpg" alt="养老院" width="50" height=10 >-->
+                  <!--<h3  class ="img-title" >我梦想的养老院</h3>-->
+                    
+                   
+                  <ul class="news-list">
+                        <li> <a href="https://www.khanacademy.org/">英文可汗学院链接</a></li>
+                        <li> <a href="https://zh.khanacademy.org/">中文可汗学院链接</a></li>
+                        <li> <a href=" https://ykt.eduyun.cn/ykt/sjykt/index.html">国家中小学网络云平台链接</a></li>  
+                        <li> <a href="http://www.mca.gov.cn/article/xw/tzgg/202110/20211000037267.shtml">民政部养老信息</a></li>
+                        <li> <a href="https://baijiahao.baidu.com/s?id=1632494656276130292&wfr=spider&for=pc">机器人护理员</a></li>
+                        <li> <a href="https://www.bilibili.com/video/BV1XJ411X7Ud?">HTML+CSS代码学习</a></li>
+                        <li> <a href="https://www.bilibili.com/video/BV1YW411T7GX?spm_id_from=333.788.b_636f6d6d656e74.8">JavaScript代码学习</a></li>
+                        <li> <a href="https://www.bilibili.com/video/BV1Xy4y1v7S2?share_source=copy_web">TypeScript代码学习</a></li>
+                        <li> <a href=" https://www.bilibili.com/video/BV1Xo4y1d7Uc/?vd_source=ddb98fa9566c83ccb46b7ee7066065fc">李立超老师讲Python</a></li>
+                        <li> <a href=" https://www.bilibili.com/video/BV1Rr4y1L7r3/?spm_id_from=333.337.search-card.all.click&vd_source=ddb98fa9566c83ccb46b7ee7066065fc">前端框架Vue.js作者尤雨溪</a></li>
+                        <li> <a href="http://www.yytong.com/">颐养通养老软件</a></li>
+                        <li> <a href="https://baijiahao.baidu.com/s?id=1728259061473546515&wfr=spider&for=pc">上海青芸机器人有限公司的机器人</a></li> 
+                        <li> <a href="https://www.bilibili.com/video/BV1aE411R7AS?share_source=weixin_web&share_times=1">智能机器人系统（国防科技大学）</a></li>
+                        <li> <a href="https://www.bilibili.com/video/BV184411i7wb?share_source=weixin_web&share_times=2">机器人基础原理（东北大学）</a></li>
+                        <li> <a href="https://www.bilibili.com/video/BV1Hs411c7Yi?p=48&share_source=weixin_web&share_times=2">机器人原理及应用（东南大学）</a></li>
+                        <li> <a href="https://www.bilibili.com/video/BV1Mv411N7zq?share_source=weixin_web&share_times=2">机器人工作原理（波士顿动力工程师）</a></li>
+                  </ul> 
+                        
+                  <br></br>
+              <!-- <span class="news-img">预留关于养老院,网络居家养老，
+                        机器人护理员信息空间</span>-->
+            
+            </div>
+           <!--  <audio controls loop="true"  autoplay="true" width="50" height="10" 
+                   src="./zhaifei3.mp3"   >
+         <embed src=“./20211011005.mp3”  type="audio/mp3"  >
+    
+         </audio>   -->    <!-- <audio controls loop="true"  autoplay="true"
+          这是dw软件里添加音乐代码 
+           <audio controls loop="true"  autoplay="true"       
+        <source src="./zhaifei3.mp3">
+         <embed src=“./20211011005.mp3”  type="audio/mp3"  width="50" height="10">
+    </audio> 
+<source src="./2021//20211011004.mp3">
+                 <embed src=“./2021//20211011004.mp3”  type="audio/mp3"  width="200" height="50"    >
+                 </audio>  
+                 这是微软的软件
+             <audio controls loop="true"  autoplay="true"  align="center"
+                   src="./202111235.mp3"   >
+         <embed src=“./202111235.mp3”  type="audio/mp3"  >
+    
+         </audio>    -->
+            
+            <!--<background="2021-11.jpg" ></background> -->
+            
+            
+            
+             
+            
+           <!--
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=100267451&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+            <br></br>
+            <img src="./002.jpg" alt="景山草地" width="460">111111
+            <br></br>
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=254682386&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=92109038&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>          
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=91909483&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe> 
+             
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=90931151&autoplay=true&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=11612002&autoplay=true&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe> 
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=6029760&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+             
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=5985855&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>  
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=5750400&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+             
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=4986157&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+             
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=4938080&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=4904680&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+             
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=4682287&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=4437526&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=4194868&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+             
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=4194403&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=4061335&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=4048853&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+            
+            <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=100267451&autoplay=false&disablePlaylist=false" allowFullScreen="false" scrolling="no"></iframe>
+            <br></br>
+            <blockquote>
+                  <p style ="color:green; font-size:10px;">鲁迅先生在《且介亭杂文》的序言里写道：“----
+                        凡是写下来的，全在这里面。
+                        当然不敢说是诗史，其中有着时代的眉目，也决不是英雄们的八宝箱。
+                        一朝打开，便见光辉灿烂。我只在深夜的街头摆着一个地摊，所有的
+                        无非几个小钉，几个瓦碟，但也希望，并且相信有些人会从中寻出合于
+                        他的用处的东西。”  
+                  </style>
+                  </p>   
+            </blockquote>
+             
+            <iframe frameborder="0" src="http://www.ashma.net/indexlao.html " width="800" height="300">江山如此多娇</iframe>
+            <br></br>
+            <a href="2021-wen002.html" target="_blank">我梦想中的居家养老院</a>
+            <br></br>
+    
+            <p>实体</p> 
+            a&gt;b&lt;c 
+            <br></br>
+            <p> 这页面是2021年在哔哩哔哩网站边跟着尚硅谷李立超老师学习网页代码边建立新的网页 </p>
+            <iframe src="//player.bilibili.com/player.html?aid=77217003&bvid=BV1XJ411X7Ud&cid=132022220&page=34" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+            <audio controls loop="true"  autoplay="true"
+                          对不起，你的浏览器不支持播放音频，请升级浏览器！
+                 <source src="./zhaifei3.mp3">
+                 <embed src=“./20211011005.mp3”  type="audio/mp3"  width="200" height="50">
+            </audio> 
+            <audio controls 
+                   <source src="./20211110.mp3">
+                 <embed src=“./20211110.mp3”  type="audio/mp3"  width="0" height="0"   >
+                 </audio>
+                  https://tv.sohu.com/v/dXMvNDgzMTEvNjAyOTc2MC5zaHRtbA==.html
+                           https://tv.sohu.com/v/dXMvNDgzMTEvNjAyOTc2MC5zaHRtbA==.html
+                          https://tv.sohu.com/v/dXMvNDgzMTEvNTk4NTg1NS5zaHRtbA==.html 
+            -->
+            <div class="outer2">
+                 
+                 <!-- <ul>
+                     <span class="s1"></span>
+
+
+
+                   </ul>-->
+                    <!--<p align="center"><a href="https://tv.sohu.com/v/dXMvNDgzMTEvOTIxMDkwMzguc2h0bWw=.html">晓舜西湖摄影</a></p> -->
+                     
+                  <!-- <p align="center"><iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=92109038&autoplay=false&disablePlaylist=false" allowFullScreen="true" scrolling="no"></iframe></p>
+                   
+                  <video  controls width=200 height=151 >
+                        <source src="./19970701.mp4" type="video/mp4">
+                        <embed src="./19970701.mp4" type="video/mp4">
+                    
+                    </video>--> 
+                    <!-- <div class="box1"></div>-->
+                    <!-- <div class="box2"></div>
+                     <div class="box3"></div>-->
+                    <!-- <a href="JavaScript:;">雪碧图</a> --> 
+                </div> 
+
+            <!--<div class="outer3">
+                  <a href="avaScript:;">按钮调图</a>-->
+                  <!--<a href="./b016.jpg">hover</a>
+                  <a href="./b017.jpg">active</a>-->
+
+            </div>         
+                 
+             <div> <nav class="left-nav">
+                       <br/> <br/><br/> <br/>
+                   <div class="item">
+                         <p align="center"><iframe frameborder="0" src="http://www.vb2028.com/index0903xccomcn.html" width="150" height="400"></iframe></p>   
+                          
+                   </div>
+                  
+                                  
+                  </nav>
+                  <br/><br/>
+             <nav class="middle-nav">
+                  
+                   <div class="item">
+                        <div class="lunbotu">
+                         <iframe frameborder="0" src="http://www.vb2028.com/index0836ddsd.html" width="540" height="400"></iframe> 
+                   </div>
+             </nav>           
+                  <br></br>
+                  <!--在下边轮播图右侧添加一个框-->
+             <!--<nav class="middle4-nav">
+                  
+                        <div class="item4">
+                             <div class="lunbotu4">
+                              <iframe frameborder="0" src="http://www.vb2028.com/index0836ddsd.html" width="150" height="400"></iframe> 
+                        </div>-->
+            </nav>           
+                  <br></br>
+                  <br></br>
+                  <p align="center"> <audio controls    loop="true"  
+                               src="./20220302.mp3" 
+                               
+                            
+                   </audio></p>
+
+                   <p align="center"> <audio controls    loop="true"  
+                        src="./20240206.mp3" 
+                        
+                     
+            </audio></p>
+
+
+                   
+                   <!--<div style="width:0; height: 1000px; border-left: 3px
+                   red solid; position: absolute; left: 800px; top: 0;"></div>-->
+
+                     <!--<span class="s1">底部空间</span>-->
+                    
+                     <!--<a href="https://www.miit.gov.cn/">京ICP备15059030-1</a>-->
+                    
+                     <!--<a href="mailto:vb2028@sohu.com"  >vb2028@sohu.com</a>-->
+                     
+                     <!--<span font size: 5px; >网页修改时间2021-12-15</span>-->   
+                     
+                     
+                            
+                        
+                     <!--<p  font size: class="STYLE10">以闲为自在 将寿补蹉跎</p>-->
+                     <!--<p align="center">-->
+
+                   <!-- <audio controls loop="false"  autoplay="false" align="center" 
+        
+                        <source src="./zhaifei3.mp3">
+                      <embed src=“./zhaifei3.mp3”  type="audio/mp3"  width="0" height="0"   >
+                      </audio>-->
+                  
+                  
+                </div>
+                     
+            
+              <!--  <p align="center">
+
+                <audio controls loop="true"  autoplay="true" align="center" 
+
+                <source src="./zhaifei3.mp3">
+              <embed src=“./zhaifei3.mp3”  type="audio/mp3"  width="0" height="0"   </audio> >-->
+             
+       
+           <!-- <font size="4" face="隶书" color="#808000">江山如此多娇&nbsp; </font>
+		<font size="4" face="隶书" color="#FF0000">
+            <p align="center"><span class="STYLE8"><a href="mailto:vb2028@sohu.com">vb2028@sohu.com</a></span></p>
+            <p align="center"><span style="text-decoration: none"><a href="https://www.miit.gov.cn/"></span></a></font>
+            
+		<font color="#808000">京ICP备15059030-3</font>-->
+            
+            
+      </div>                    
+      <br></br>
+      <script type="text/javascript" src="./2021/js/tools.js"></script>
+      <script type="text/javascript"></script>
+            <!--<font size="4" face="隶书" color="#808000">&nbsp;&nbsp;&nbsp; </font></b>
+		<font color="#808000"><b><font size="4" face="隶书">-->
+		<!--<a href="mailto:vb0912@sohu.com"><font color="#808000">vb0912@sohu.com</font></a>&nbsp; 
+		改动中2021-11-16</font></b></font></p>-->
+             <!--<p align="center">  --> <!--autoplay="true" -->
+                  <!--href="https://www.miit.gov.cn/"-->
+                   <br></br>
+                   <p align="center"><span> <a href="https://beian.miit.gov.cn/#/Integrated/index" >京ICP备15059030-1  vb2028@sohu.com</a></span></p>
+      </body>
+</html>
+
+  <!--<p align="center">--><!-- <p>&nbsp;</p>--><!--align="center"-->
